@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>ICT</h1>
+        <section class="menu" >
+            <ul class="menu-list">
+                <li>Home</li>
+                <li class="active">Products</li>
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+        <section class="main">
+            <section class="left">
+                <p class="title">Information Technology</p>
+                <p class="msg">Information technology (IT) is a set of related fields that encompass computer systems, software,
+                programming languages and data and information processing and storage.IT forms part of information and communications technology (ICT).
+                </p>
+                 <button class="cta">
+                 <a href="https://www.codecademy.com/resources/blog/what-is-information-technology/">Click</a>
+                 </button>
+            </section>
+            <section class="right">
+                <img src="https://img.freepik.com/premium-vector/man-woman-are-working-computer-screen-with-youtube-app-icon_895273-4.jpg" alt="Landing image">
+            </section>
+        </section>
+        <script>
+            var menu=document.querySelector('.menu');
+            var menuBtn = document.querySelector('.menu button');
+            menuBtn.addEventListener('click',() => {
+                menu.classlist.toggle('opened')
+            })
+        </script>
+</body>
+</html>
